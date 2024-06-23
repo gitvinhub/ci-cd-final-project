@@ -49,8 +49,6 @@ spec:
     - name: nosetests
       image: python:3.9-slim
       workingDir: $(workspaces.source.path)
-      command:
-        - "nosetests"
       args:
         - "$(params.args)"
       script: |
